@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Template Title</title>
+    <script>
+        /* 
+        As one of my first projects for coding I wanted to make a dice roller for D&D and other role playing games. 
+        I first created one in Python and now that I am learning web development I have created one with HTML and JavaScript.
+        I am hoping that this will be good a look at my progress as a programmer and show the things that I can do and that 
+        I am learning. 
+        */       
+        function d20(){
+            let d20 = Math.floor(Math.random() * 21);
+            document.getElementById('output').innerHTML = d20;
+        }
+        function d10(){
+            let d10 = Math.floor(Math.random() * 11);
+            document.getElementById('output').innerHTML = d10;
+        }
+        function d12(){
+            let d12 = Math.floor(Math.random() * 13);
+            document.getElementById('output').innerHTML = d12;
+        }
+        function d8(){
+            let d8 = Math.floor(Math.random() * 9);
+            document.getElementById('output').innerHTML = d8;
+        }
+        function d6(){
+            let d6 = Math.floor(Math.random() * 7);
+            document.getElementById('output').innerHTML = d6;
+        }
+        function d100(){
+            let d100 = Math.floor(Math.random() * 101);
+            document.getElementById('output').innerHTML = d100;
+        }
+        function d4(){
+            let d4 = Math.floor(Math.random() * 5);
+            document.getElementById('output').innerHTML = d4;
+        }
+        function d3(){
+            let d3 = Math.floor(Math.random() * 4);
+            document.getElementById('output').innerHTML = d3;
+        }
+        
+    </script>
+</head>
+
+<body>    
+    <h1>Doungons & Dragons</h1>
+    <h2>Dice Roller</h2>
+    <button onclick="d20()">D20</button>
+    <button onclick="d10()">D10</button>
+    <button onclick="d12()">D12</button>
+    <button onclick="d100()">D100</button>
+    <button onclick="d8()">D8</button>
+    <button onclick="d6()">D6</button>
+    <button onclick="d4()">D4</button>
+    <button onclick="d3()">D3</button>
+    <div id="output"></div>
+</body>
+</html>
