@@ -2,7 +2,30 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title>Template Title</title>
+    <title>Doungons & Dragons Dice Roller</title>
+
+    <style>
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .center {
+            text-align: center;
+            margin: auto;
+            width: 55%;
+            padding: 10px;
+        }
+        div {
+            font-size: 200%
+        }
+    </style>
     <script>
         /* 
         As one of my first projects for coding I wanted to make a dice roller for D&D and other role playing games. 
@@ -52,14 +75,16 @@
 <!--
  Added CSS element to the headers so they centered.
 -->
-    <button onclick="d20()">D20</button>
-    <button onclick="d10()">D10</button>
-    <button onclick="d12()">D12</button>
-    <button onclick="d100()">D100</button>
-    <button onclick="d8()">D8</button>
-    <button onclick="d6()">D6</button>
-    <button onclick="d4()">D4</button>
-    <button onclick="d3()">D3</button>
-    <div id="output"></div>
+    <div class="center">
+        <button onclick="d20()">D20</button>
+        <button onclick="d10()">D10</button>
+        <button onclick="d12()">D12</button>
+        <button onclick="d100()">D100</button>
+        <button onclick="d8()">D8</button>
+        <button onclick="d6()">D6</button>
+        <button onclick="d4()">D4</button>
+        <button onclick="d3()">D3</button>
+    </div>    
+    <div class="center" id="output"></div>
 </body>
 </html>
