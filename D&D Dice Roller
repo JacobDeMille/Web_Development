@@ -49,9 +49,9 @@
 <body>    
     <h1 style="text-align:center;">Doungons & Dragons</h1>
     <h2 style="text-align:center;">Dice Roller</h2>
-/*
-* Added CSS element to the headers so they centered.
-*/
+<!--
+ Added CSS element to the headers so they centered.
+-->
     <button onclick="d20()">D20</button>
     <button onclick="d10()">D10</button>
     <button onclick="d12()">D12</button>
